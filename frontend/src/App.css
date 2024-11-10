@@ -1,0 +1,110 @@
+/* App.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles with a gradient background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering */
+  color: #fff;             /* White text color for contrast */
+}
+
+/* Main container styling */
+.App {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Center text inside the container */
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f1c40f; /* Golden color for emphasis */
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1abc9c; /* Turquoise color for subheadings */
+}
+
+/* Button styling */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #e74c3c; /* Red color for the button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Error message styling */
+.error {
+  color: #ff6b6b; /* Light red for errors */
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Data display container */
+.data-container {
+  margin-top: 20px;
+  text-align: left; /* Left-align text for data */
+}
+
+.data-container p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+/* Strong text styling */
+strong {
+  color: #f39c12; /* Orange color for labels */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}

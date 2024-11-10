@@ -1,0 +1,14 @@
+{
+  "name": "iot-simulator",
+  "version": "1.0.0",
+  "description": "Simulated IoT devices for traffic monitoring",
+  "main": "simulator.js",
+  "type": "module",
+  "scripts": {
+    "start": "node simulator.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "socket.io-client": "^4.7.5"
+  }
+}
