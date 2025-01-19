@@ -1,5 +1,7 @@
 // simulator.js
 
+
+
 import { io } from 'socket.io-client';
 import dotenv from 'dotenv';
 
